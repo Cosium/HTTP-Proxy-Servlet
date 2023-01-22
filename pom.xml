@@ -54,11 +54,10 @@
 
   <dependencies>
 
-    <!-- Probably works with 3.0 as well -->
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <version>5.0.0</version>
       <scope>provided</scope>
     </dependency>
 
@@ -106,7 +105,7 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-servlet</artifactId>
-      <version>9.4.30.v20200611</version>
+      <version>11.0.13</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -147,8 +146,8 @@
  org.apache.http.util; version="0",
  org.apache.http.client.utils;version="0",
  org.apache.http.client.methods;version="0",
- javax.servlet;version="0",
- javax.servlet.http;version="0",
+ jakarta.servlet;version="0",
+ jakarta.servlet.http;version="0",
  javax.net.ssl;version="0", org.apache.http.client.config;version="0"</Import-Package>
             </manifestEntries>
           </archive>

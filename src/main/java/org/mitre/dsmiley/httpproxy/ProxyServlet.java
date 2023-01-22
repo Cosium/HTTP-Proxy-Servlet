@@ -37,11 +37,11 @@ import org.apache.http.message.BasicHttpRequest;
 import org.apache.http.message.HeaderGroup;
 import org.apache.http.util.EntityUtils;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStream;
@@ -263,7 +263,7 @@ public class ProxyServlet extends HttpServlet {
   }
 
   /**
-   * Called from {@link #init(javax.servlet.ServletConfig)}.
+   * Called from {@link #init(jakarta.servlet.ServletConfig)}.
    * HttpClient offers many opportunities for customization.
    * In any case, it should be thread-safe.
    */
@@ -739,7 +739,7 @@ public class ProxyServlet extends HttpServlet {
   }
 
   /**
-   * Allow overrides of {@link javax.servlet.http.HttpServletRequest#getPathInfo()}.
+   * Allow overrides of {@link jakarta.servlet.http.HttpServletRequest#getPathInfo()}.
    * Useful when url-pattern of servlet-mapping (web.xml) requires manipulation.
    */
   protected String rewritePathInfoFromRequest(HttpServletRequest servletRequest) {
