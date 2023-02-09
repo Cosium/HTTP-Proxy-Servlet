@@ -365,11 +365,9 @@ public class ProxyServlet extends HttpServlet {
 
       // Process the response:
 
-      // Pass the response code. This method with the "reason phrase" is deprecated but it's the
-      //   only way to pass the reason along too.
+      // Pass the response code.
       int statusCode = proxyResponse.getStatusLine().getStatusCode();
-      //noinspection deprecation
-      servletResponse.setStatus(statusCode, proxyResponse.getStatusLine().getReasonPhrase());
+      servletResponse.setStatus(statusCode);
 
       // Copying response headers to make sure SESSIONID or other Cookie which comes from the remote
       // server will be saved in client when the proxied url was redirected to another one.
